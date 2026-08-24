@@ -162,6 +162,8 @@ Algorithm* Solver::createAlgorithm(std::string name){
         return new PWAcyclic(name, problem);
     else if (name == "PWBucket" or name == "PWBucketRelaxDom")
         return new PWBucket(name, problem);
+    else if (name == "PW_ILS")
+        return new PW_ILS(name, problem);
     else
         return new PWDefault(name, problem);
 }

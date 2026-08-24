@@ -83,6 +83,14 @@ struct Parameters {
     static void setTimestamp(std::string t) {timestamp = t;}
     static void setupCollectionPath();
 
+    
+    /** ILS Algorithm Parameters **/
+    static float getIlsT() { return ils_t; }
+    static int getIlsK() { return ils_k; }
+    static float getIlsP() { return ils_p; }
+    static float getIlsTd() { return ils_td; }
+    static int getIlsKd() { return ils_kd; }
+
 private:
     static std::string param_path;                              //Global parameter
 
@@ -149,6 +157,14 @@ private:
     static std::string timestamp;                                           //Global parameter
     static int collection_level;                                            //Global parameter
     static std::string collection_folder, collection_tag, collection_path;  //Global parameter
+
+
+    /** ILS Algorithm Parameters **/
+    static float ils_t;
+    static int ils_k;
+    static float ils_p;
+    static float ils_td;
+    static int ils_kd;
 };
 
 #endif //SPPRCLIB_PARAM_H

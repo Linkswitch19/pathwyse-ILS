@@ -6,6 +6,7 @@
 #include "algorithms/dynamic_programming/PW_default/PW_default.h"
 #include "algorithms/dynamic_programming/PW_acyclic/PW_acyclic.h"
 #include "algorithms/dynamic_programming/PW_bucket/PW_bucket.h"
+#include "algorithms/pw_ils.h"
 #include <thread>
 #include <mutex>
 #include <utility>

@@ -4,7 +4,11 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#ifndef _WIN32
 #include <unistd.h>
+#else
+#include <io.h>
+#endif
 #include "param.h"
 
 namespace Logger {

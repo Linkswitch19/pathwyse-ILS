@@ -1,0 +1,15 @@
+# Cartelle di build e Visual Studio
+.vs/
+build/
+out/
+src/out/
+*.slnx.sqlite
+
+# File binari e di compilazione
+*.exe
+*.obj
+*.pdb
+*.dll
+*.ilk
+*.lib
+*.exp

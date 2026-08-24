@@ -76,6 +76,13 @@ std::string Parameters::collection_folder = "output/";
 std::string Parameters::collection_tag;
 std::string Parameters::collection_path;
 
+/** ILS Algorithm Parameters **/
+float Parameters::ils_t = 0.1f;
+int Parameters::ils_k = 100;
+float Parameters::ils_p = 0.25f;
+float Parameters::ils_td = 10.0f;
+int Parameters::ils_kd = 10;
+
 void Parameters::readParameters(std::string param_path) {
     std::ifstream f;
     std::string command, value;
@@ -170,7 +177,15 @@ void Parameters::readParameters(std::string param_path) {
         {"algo/bucket/next_dom_check_percentage", [&](const std::string& val) { bucket_next_percentage = std::stof(val); }},
         {"data_collection/level", [&](const std::string& val) { collection_level = std::stoi(val); }},
         {"data_collection/tag", [&](const std::string& val) { if(collection_tag.empty()) collection_tag = val; }},
-        {"output/write", [&](const std::string& val) { output_write = std::stoi(val); }}
+        {"output/write", [&](const std::string& val) { output_write = std::stoi(val); }},
+        {"ils_t", [&](const std::string& val) { ils_t = std::stof(val); } },
+        {"ils_k", [&](const std::string& val) { ils_k = std::stoi(val); }},
+        {"ils_p", [&](const std::string& val) { ils_p = std::stof(val); }},
+        {"ils_td", [&](const std::string& val) { ils_td = std::stof(val); }},
+        {"ils_kd", [&](const std::string& val) { ils_kd = std::stoi(val); }}
+
+
+
     };
 
     // Helper

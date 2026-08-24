@@ -40,6 +40,8 @@ set(
 	
         core/algorithms/algorithm.h
         core/algorithms/algorithm.cpp
+        core/algorithms/pw_ils.h
+        core/algorithms/pw_ils.cpp
 
         core/algorithms/labels/label.h
         core/algorithms/labels/label.cpp
