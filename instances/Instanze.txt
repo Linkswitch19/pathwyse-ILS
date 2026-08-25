@@ -1,0 +1,406 @@
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0> .\build\src\Debug\pathwyse.exe instances\A-n54-k7-149.sppcc
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\A-n54-k7-149.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 54
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : A-n54-k7
+  Nodes                           : 55
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 54
+  Resource Upper Bounds           : 100
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 9.234485
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -12492.000000
+  Tour Length                     : 12
+  Tour                            : 0 6 32 14 27 12 2 24 51 41 34 54
+  Consumption                     : 100
+--------------------------------------------
+
+
+
+
+
+
+
+
+
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\A-n60-k9-57.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 60
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : A-n60-k9
+  Nodes                           : 61
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 60
+  Resource Upper Bounds           : 100
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 27.294795
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -1000.000000
+  Tour Length                     : 10
+  Tour                            : 0 25 46 40 11 3 20 16 41 60
+  Consumption                     : 89
+--------------------------------------------
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0>
+
+
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\A-n80-k10-14.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 80
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : A-n80-k10
+  Nodes                           : 81
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 80
+  Resource Upper Bounds           : 100
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 65.785667
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -105283.000000
+  Tour Length                     : 15
+  Tour                            : 0 48 8 68 78 75 57 35 65 69 47 41 46 64 80
+  Consumption                     : 99
+--------------------------------------------
+
+
+
+
+
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0> .\build\src\Debug\pathwyse.exe instances\B-n45-k6-54.sppcc
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\B-n45-k6-54.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 45
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : B-n45-k6
+  Nodes                           : 46
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 45
+  Resource Upper Bounds           : 100
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 96.116750
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -74278.000000
+  Tour Length                     : 12
+  Tour                            : 0 13 20 15 33 40 44 35 22 12 39 45
+  Consumption                     : 100
+--------------------------------------------
+
+
+S C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0> .\build\src\Debug\pathwyse.exe instances\B-n78-k10-70.sppcc
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\B-n78-k10-70.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 78
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : B-n78-k10
+  Nodes                           : 79
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 78
+  Resource Upper Bounds           : 100
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 34.470044
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -44333.000000
+  Tour Length                     : 12
+  Tour                            : 0 8 22 71 51 45 31 20 3 32 47 78
+  Consumption                     : 100
+--------------------------------------------
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0>
+
+
+
+
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\M-n101-k10-97.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 101
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : M-n101-k10
+  Nodes                           : 102
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 101
+  Resource Upper Bounds           : 200
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 60.905079
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -32628.000000
+  Tour Length                     : 16
+  Tour                            : 0 47 46 51 45 44 59 58 53 55 68 64 61 62 67 101
+  Consumption                     : 200
+--------------------------------------------
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0>
+
+
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0> .\build\src\Debug\pathwyse.exe instances\M-n151-k12-15.sppcc
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\M-n151-k12-15.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 151
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : M-n151-k12
+  Nodes                           : 152
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 151
+  Resource Upper Bounds           : 200
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 1040.815193
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -79996.000000
+  Tour Length                     : 19
+  Tour                            : 0 26 149 110 55 24 134 150 3 79 78 34 35 71 103 20 51 122 151
+  Consumption                     : 200
+--------------------------------------------
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0>
+
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0> .\build\src\Debug\pathwyse.exe instances\M-n200-k17-12.sppcc
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\M-n200-k17-12.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 200
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : M-n200-k17
+  Nodes                           : 201
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 200
+  Resource Upper Bounds           : 200
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 712.354138
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -121210.000000
+  Tour Length                     : 20
+  Tour                            : 0 18 8 46 143 64 181 66 136 34 78 29 24 165 55 67 187 4 110 200
+  Consumption                     : 200
+--------------------------------------------
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0>
+
+S C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0> .\build\src\Debug\pathwyse.exe instances\P-n76-k4-41.sppcc
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\P-n76-k4-41.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 76
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : P-n76-k4
+  Nodes                           : 77
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 76
+  Resource Upper Bounds           : 350
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 106.791573
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -88276.000000
+  Tour Length                     : 22
+  Tour                            : 0 44 18 50 9 39 58 38 53 59 54 57 20 70 69 47 48 74 2 73 68 76
+  Consumption                     : 350
+--------------------------------------------
+
+
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0> .\build\src\Debug\pathwyse.exe instances\P-n76-k5-16.sppcc
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\P-n76-k5-16.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 76
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : P-n76-k5
+  Nodes                           : 77
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 76
+  Resource Upper Bounds           : 280
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 39.989066
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -107633.000000
+  Tour Length                     : 20
+  Tour                            : 0 27 57 15 36 47 74 28 62 73 1 56 49 24 18 55 25 39 58 76
+  Consumption                     : 280
+--------------------------------------------
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0>
+
+PS C:\Users\andre\Downloads\Scuola\Ottimizazzione\pathwyse-1.0.0\pathwyse-1.0.0> .\build\src\Debug\pathwyse.exe instances\P-n101-k4-174.sppcc
+[ PathWyse ver. 1.0]
+--------------------------------------------
+Reading problem data: instances\P-n101-k4-174.sppcc
+Warning: Symmetric not set, assuming asymmetric network
+Warning: Duplicating depot node. Destination is now: 101
+Reading problem data complete
+--------------------------------------------
+[ Problem ]
+  Name                            : P-n101-k4
+  Nodes                           : 102
+  Resources                       : 1
+  Origin                          : 0
+  Destination                     : 101
+  Resource Upper Bounds           : 400
+--------------------------------------------
+Solving problem...
+Solving complete
+--------------------------------------------
+[ Optimization ]
+  Active algorithms               : 1
+  Parallel mode                   : 0
+  Solutions count                 : 1
+  Problem Status                  : Feasible
+  PWDefault Status                : Optimization complete
+  PWDefault Time                  : 214.925982
+--------------------------------------------
+[ Solution ]
+  Solution Status                 : Optimal
+  Obj                             : -17702.000000
+  Tour Length                     : 36
+  Tour                            : 0 52 18 83 8 46 47 36 49 64 63 90 32 10 62 88 31 70 1 50 76 77 3 29 24 54 55 25 4 56 75 41 57 2 40 101
+  Consumption                     : 397
+--------------------------------------------

@@ -17,7 +17,7 @@ algo/preprocessing/critical  = 0
 # --- Algorithms Parameters ---------------------------------------------------
 
 algo_names    = PWDefault,PWDefaultRelaxDom,PWDefaultRelaxQueue,PW_ILS
-algo_active   = 0,0,0,1
+algo_active   = 1,0,0,0
 algo_parallel = 0
 
 algo/default/autoconfig = 1
@@ -54,9 +54,9 @@ output/write = 0
 
 
 # Novita 
-ils_t = 0.1
-ils_td = 1
-ils_k = 10
-ils_kd = 1
+ils_t = 1.0
+ils_td = 10
+ils_k = 500
+ils_kd = 50
 ils_p = 0.25
-seed = 12345
+seed = 2026

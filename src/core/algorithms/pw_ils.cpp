@@ -25,14 +25,23 @@
 bool calculate_path_metrics(Problem* problem, const std::list<int>& tour, int& objective, std::vector<int>& consumption) {
     objective = 0;
     consumption.assign(problem->getNumRes(), 0);
-    
+
     int prev_node = -1;
-    for(int node : tour) {
+    for (int node : tour) {
         if (prev_node != -1) {
+            //  costo dell'arco all'obiettivo
             objective += problem->getObj()->getArcCost(prev_node, node);
+
+            //  consumo dell'arco alla risorsa (LA PARTE CHE MANCAVA!)
+            for (int i = 0; i < problem->getNumRes(); ++i) {
+                consumption[i] += problem->getRes(i)->getArcCost(prev_node, node);
+            }
         }
+
+        //  costo del nodo all'obiettivo
         objective += problem->getObj()->getNodeCost(node);
 
+        // Aggiungiamo il consumo del nodo alla risorsa
         for (int i = 0; i < problem->getNumRes(); ++i) {
             if (node != problem->getOrigin() && node != problem->getDestination()) {
                 consumption[i] += problem->getRes(i)->getNodeCost(node);
@@ -40,6 +49,7 @@ bool calculate_path_metrics(Problem* problem, const std::list<int>& tour, int& o
         }
         prev_node = node;
     }
+
     // The destination node's cost (prize) is not part of the objective function in ESPPRC
     objective -= problem->getObj()->getNodeCost(problem->getDestination());
 
@@ -143,34 +153,33 @@ Path PW_ILS::constructivePhase() {
     }
 
     while (true) {
-        // Inizializza al massimo valore possibile (richiede #include <limits>)
+      
         double best_delta = std::numeric_limits<double>::max();
         int best_node_to_insert = -1;
         std::list<int>::iterator best_pos_iterator;
 
         for (int node_to_insert : candidate_nodes) {
-            int pos_idx = 1; // Contatore di posizione
+            int pos_idx = 1; 
             for (auto it = tour.begin(); std::next(it) != tour.end(); ++it, ++pos_idx) {
                 int u = *it;
                 int v = *std::next(it);
 
-                // Calcola la variazione di costo (delta) per l'inserimento
                 double delta = problem->getObj()->getArcCost(u, node_to_insert) +
                     problem->getObj()->getArcCost(node_to_insert, v) -
                     problem->getObj()->getArcCost(u, v) +
                     problem->getObj()->getNodeCost(node_to_insert);
 
-                // Cerca l'inserimento col costo minore
+                
                 if (delta < best_delta) {
                     std::list<int> temp_tour = tour;
                     auto temp_it = temp_tour.begin();
-                    std::advance(temp_it, pos_idx); // Recupera l'iteratore corretto della NUOVA lista
+                    std::advance(temp_it, pos_idx); 
                     temp_tour.insert(temp_it, node_to_insert);
 
                     int temp_obj;
                     std::vector<int> temp_cons;
 
-                    // Controlla la fattibilità rispetto alle risorse
+                   
                     if (calculate_path_metrics(problem, temp_tour, temp_obj, temp_cons)) {
                         best_delta = delta;
                         best_node_to_insert = node_to_insert;
@@ -180,7 +189,7 @@ Path PW_ILS::constructivePhase() {
             }
         }
 
-        // Se abbiamo trovato almeno un nodo che non fa sforare le risorse, lo inseriamo
+    
         if (best_node_to_insert != -1) {
             tour.insert(std::next(best_pos_iterator), best_node_to_insert);
             candidate_nodes.erase(
@@ -189,7 +198,7 @@ Path PW_ILS::constructivePhase() {
             );
         }
         else {
-            // Se non ci sono nodi validi da inserire, usciamo dal ciclo
+            
             break;
         }
     }
@@ -223,8 +232,7 @@ void PW_ILS::localSearch(Path& current_solution) {
 
         int initial_objective = current_solution.getObjective();
 
-        // SALVIAMO LA LISTA IN UNA VARIABILE LOCALE! 
-        // Questo evita la creazione di liste temporanee multiple.
+       
         std::list<int> current_tour = current_solution.getTour();
 
         // --- 1. Add Operator (Best Improvement) ---
@@ -257,14 +265,14 @@ void PW_ILS::localSearch(Path& current_solution) {
             calculate_path_metrics(problem, best_add_tour, obj, cons);
             current_solution.setObjective(obj);
             current_solution.setConsumption(cons);
-            current_tour = best_add_tour; // Aggiorniamo la copia locale per gli operatori successivi
+            current_tour = best_add_tour; 
         }
 
         // --- 2. Delete Operator (Best Improvement) ---
         int best_del_objective = current_solution.getObjective();
         std::list<int> best_del_tour;
 
-        // Usiamo la nostra variabile sicura 'current_tour'
+        
         std::vector<int> tour_vec_del(current_tour.begin(), current_tour.end());
 
         if (tour_vec_del.size() > 2) {
@@ -274,7 +282,7 @@ void PW_ILS::localSearch(Path& current_solution) {
                 std::list<int> new_tour(new_tour_vec.begin(), new_tour_vec.end());
 
                 int new_obj; std::vector<int> new_cons;
-                // Qui mancava un if nella tua versione originale per aggiornare the best delete!
+                
                 if (calculate_path_metrics(problem, new_tour, new_obj, new_cons) && new_obj < best_del_objective) {
                     best_del_objective = new_obj;
                     best_del_tour = new_tour;
@@ -294,7 +302,7 @@ void PW_ILS::localSearch(Path& current_solution) {
         int best_2opt_objective = current_solution.getObjective();
         std::list<int> best_2opt_tour;
 
-        // Usiamo la nostra variabile sicura 'current_tour'
+      
         std::vector<int> tour_vec_2opt(current_tour.begin(), current_tour.end());
 
         if (tour_vec_2opt.size() > 3) {
